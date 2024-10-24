@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash Khandelwal | Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* General Styles */
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+
+    h1, h2, h3 {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .container {
+      padding: 50px 15px;
+    }
+
+    /* Hero Section - Sky Blue Background */
+    #hero {
+      background-color: #e0f7fa; /* Light sky blue */
+      color: #1a1a1a; /* Dark font for visibility */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 12px 30px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    /* About Section */
+    section {
+      background-color: white;
+      padding: 60px 0;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-wrapper__info {
+      text-align: center;
+      color: #333;
+    }
+
+    .cta-btn--resume {
+      background-color: #ff5722;
+      padding: 10px 25px;
+      border-radius: 30px;
+    }
+
+    .cta-btn--resume:hover {
+      background-color: #e64a19;
+    }
+
+    /* Project Section - No Image */
+    .project-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .project-wrapper__text {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      color: #1a1a1a; /* Dark text */
+    }
+
+    .img-fluid {
+      display: none;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #6c757d;
+      padding: 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .social-links a:hover {
+      color: #007bff;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .project-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="hero">
+    <div class="container">
+      <h1 class="hero-title">Hi, I'm <span class="text-color-main">Yash Khandelwal</span>, a Developer</h1>
+      <p><a class="cta-btn cta-btn--hero" href="#about">Know More</a></p>
+    </div>
+  </section>
+
+  <section id="about" class="container">
+    <div class="row about-wrapper">
+      <div class="about-wrapper__info">
+        <p>I'm Yash Khandelwal, pursuing a Bachelor's in IT with skills in Python, Android Development, and Data Analytics. Passionate about technology, I aim to leverage my expertise to create impactful solutions.</p>
+        <a href="https://github.com/YashKhandelwal7470/Resume/blob/main/Yash_Khandelwal_CV.pdf" class="cta-btn cta-btn--resume">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-wrapper">
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Yoga Training Application</h3>
+        <p>Developed a Yoga Training App focusing on wellness through yoga practice.</p>
+      </div>
+
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Heart Disease Prediction with Machine Learning</h3>
+        <p>Implemented a machine learning model to analyze and predict heart disease risk factors.</p>
+      </div>
+
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Smart Home Energy Management System</h3>
+        <p>Designed and simulated a Smart Home Energy Management system using TinkerCAD. Integrated sensors, actuators, and microcontrollers to monitor and optimize energy usage within a virtual home environment.</p>
+      </div>
+
+      <div class="project-wrapper__text">
+        <h3 class="project-wrapper__text-title">Customer Shopping Trends Dashboard</h3>
+        <p>Developed a dynamic Power BI dashboard analyzing customer shopping trends, providing insights on sales patterns, customer demographics, and product performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 - Yash Khandelwal</p>
+    <div class="social-links">
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-github"></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.about-wrapper__info, .project-wrapper__text', { delay: 200, distance: '50px', origin: 'bottom' });
+  </script>
+</body>
+</html>
